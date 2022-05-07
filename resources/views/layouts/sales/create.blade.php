@@ -8,8 +8,8 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form>
-                <div class="card-body">
+              <form onsubmit="return false;">
+                <div class="card-body" >
                 <div class="row">
                     <div class="col-md-6">
                     <div class="form-group">
@@ -41,8 +41,8 @@
                 </div>
                   
                 <!-- /.card-body -->
-                <div class="" style="border:2px;color:black;margin:20px;">
-                    <div class="row">
+                <div class="" style="border:2px;color:black;margin:20px;" id="item-line-container">
+                    <div class="row" id="item-line">
                         <div class="col-md-2">
                         <div class="form-group">
                             <label for="itemId">Item Id</label>
@@ -75,6 +75,7 @@
                         </div>
                     </div>
                 </div>
+                <div><button id="add_item_btn" class="btn btn-secondary" style="display:block;margin:0 auto;" ><i class="fa fa-plus"></i>Add Item</button></div>
 
                 <div class="card-footer">
                   <button  type="submit" class="btn btn-primary">Submit</button>
